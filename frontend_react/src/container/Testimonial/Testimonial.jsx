@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Testimonial.scss'
 
-function Testimonial(){
+export default function Testimonial(){
   return (
     <div>Testimonial</div>
   )

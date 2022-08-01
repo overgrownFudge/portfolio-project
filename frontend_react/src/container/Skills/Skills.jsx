@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Skills.scss'
 
-function Skills(){
+export default function Skills(){
   return (
     <div>Skills</div>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Work.scss'
 
-function Work(){
+export default function Work(){
   return (
     <div>Work</div>
   )

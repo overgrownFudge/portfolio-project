@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Footer.scss'
 
-function Footer(){
+export default function Footer(){
   return (
     <div>Footer</div>
   )
