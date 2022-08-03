@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavigationDots, SocialMedia } from '../components'
 
 export default function AppWrap(Component, idName, classNames) {
     return function () {
