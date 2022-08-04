@@ -1,2 +1,6 @@
 export {default as images} from './images'
-export {default as work} from './Data'
+export {default as work} from './Data/WorkData'
+export {default as skill} from './Data/SkillData'
+export {default as workExperience} from './Data/ExperiencesData'
+export {default as testimonial} from './Data/TestimonialData'
+export {default as brand} from './Data/BrandData'
