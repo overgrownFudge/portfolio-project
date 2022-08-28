@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ismail-portfolio</groupId>
-	<artifactId>API</artifactId>
+	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>API</name>
-	<description>REST API for portfolio project</description>
+	<name>backend</name>
+	<description>RESTful API for portfolio project</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
