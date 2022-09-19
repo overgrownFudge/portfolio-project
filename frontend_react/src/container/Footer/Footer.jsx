@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { images } from '../../constants'
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 
 ////VVVVVVVVthese are dummy files VVVVVVVV
 import { footer } from '../../constants'

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import ReactTooltip from 'react-tooltip'
 
-import { AppWrap } from '../../wrapper'
+import { AppWrap, MotionWrap } from '../../wrapper'
 
 
 ////VVVVVVVVthese are dummy files VVVVVVVV
