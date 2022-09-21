@@ -10,20 +10,20 @@ import java.util.List;
 public class BrandConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner(
+    CommandLineRunner brandCommandLineRunner(
             BrandRepository repository){
         return args -> {
-            Brand Amazon = new Brand(
+            Brand amazon = new Brand(
                     "Amazon",
                     "https://raw.githubusercontent.com/overgrownFudge/portfolio-project/main/frontend_react/src/assets/figma.png"
             );
-            Brand Youtube = new Brand(
+            Brand youtube = new Brand(
                     "Youtube",
                     "https://raw.githubusercontent.com/overgrownFudge/portfolio-project/main/frontend_react/src/assets/figma.png"
             );
 
             repository.saveAll(
-                    List.of(Amazon, Youtube)
+                    List.of(amazon, youtube)
             );
         };
     }
