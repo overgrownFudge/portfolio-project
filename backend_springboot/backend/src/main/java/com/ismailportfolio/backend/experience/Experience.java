@@ -17,20 +17,21 @@ public class Experience {
     )
     private Long id;
     private String year;
-    private String works;
+    @Embedded
+    private Job job;
 
     public Experience() {
     }
 
-    public Experience(Long id, String year, String works) {
+    public Experience(Long id, String year, Job job) {
         this.id = id;
         this.year = year;
-        this.works = works;
+        this.job = job;
     }
 
-    public Experience(String year, String works) {
+    public Experience(String year, Job job) {
         this.year = year;
-        this.works = works;
+        this.job = job;
     }
 
     public Long getId() {
@@ -49,12 +50,12 @@ public class Experience {
         this.year = year;
     }
 
-    public String getWorks() {
-        return works;
+    public Job getJob() {
+        return job;
     }
 
-    public void setWorks(String works) {
-        this.works = works;
+    public void setJob(Job job) {
+        this.job = job;
     }
 
     @Override
@@ -62,7 +63,7 @@ public class Experience {
         return "Experience{" +
                 "id=" + id +
                 ", year='" + year + '\'' +
-                ", works='" + works + '\'' +
+                ", job=" + job +
                 '}';
     }
 }
