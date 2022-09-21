@@ -10,16 +10,24 @@ import java.util.List;
 public class ExperienceConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner(
+    CommandLineRunner expCommandLineRunnerExp(
             ExperienceRepository repository){
-        return args -> {
-            Experience twentyTwenty = new Experience(
+         return args -> {
+             Experience twentyTwenty = new Experience(
                     "2020",
-                    "#edf2f8"
+                     new Job (
+                             "figma",
+                             "fa",
+                             "asdnasndasd"
+                     )
             );
             Experience twentyTwentyOne = new Experience(
                     "2021",
-                    "#edf2f8"
+                    new Job (
+                            "figma",
+                            "fa",
+                            "asdnasndasd"
+                    )
             );
 
             repository.saveAll(
