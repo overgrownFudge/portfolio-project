@@ -10,7 +10,7 @@ import java.util.List;
 public class WorkConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner(
+    CommandLineRunner workCommandLineRunner(
             WorkRepository repository){
         return args -> {
             Work Infinix_INBOOK = new Work(
