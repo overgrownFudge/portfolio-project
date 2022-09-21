@@ -10,23 +10,23 @@ import java.util.List;
 public class TestimonialConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner(
+    CommandLineRunner testCommandLineRunner(
             TestimonialRepository repository){
         return args -> {
-            Testimonial Facebook = new Testimonial(
+            Testimonial facebook = new Testimonial(
                     "Sarah",
                     "Facebook",
                     "Infinix Inbook X1 Ci3 10th 8GB...",
                     "https://dummyjson.com/image/i/products/9/thumbnail.jpg"
             );
-            Testimonial Google = new Testimonial(
+            Testimonial google = new Testimonial(
                     "Jason",
                     "Google",
                     "Style and speed. Stand out on ...",
                     "https://dummyjson.com/image/i/products/8/thumbnail.jpg"
             );
             repository.saveAll(
-                    List.of(Facebook, Google)
+                    List.of(facebook, google)
             );
         };
     }
