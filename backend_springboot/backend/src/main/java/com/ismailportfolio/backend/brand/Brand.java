@@ -16,21 +16,21 @@ public class Brand {
             generator = "brand_sequence"
     )
     private Long id;
-    private String brandName;
-    private String brandImage;
+    private String name;
+    private String image;
 
     public Brand() {
     }
 
-    public Brand(Long id, String brandName, String brandImage) {
+    public Brand(Long id, String name, String image) {
         this.id = id;
-        this.brandName = brandName;
-        this.brandImage = brandImage;
+        this.name = name;
+        this.image = image;
     }
 
-    public Brand(String brandName, String brandImage) {
-        this.brandName = brandName;
-        this.brandImage = brandImage;
+    public Brand(String name, String image) {
+        this.name = name;
+        this.image = image;
     }
 
     public Long getId() {
@@ -41,28 +41,28 @@ public class Brand {
         this.id = id;
     }
 
-    public String getBrandName() {
-        return brandName;
+    public String getname() {
+        return name;
     }
 
-    public void setBrandName(String brandName) {
-        this.brandName = brandName;
+    public void setname(String name) {
+        this.name = name;
     }
 
-    public String getBrandImage() {
-        return brandImage;
+    public String getImage() {
+        return image;
     }
 
-    public void setBrandImage(String brandImage) {
-        this.brandImage = brandImage;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     @Override
     public String toString() {
         return "Brand{" +
                 "id=" + id +
-                ", brandName='" + brandName + '\'' +
-                ", brandImage='" + brandImage + '\'' +
+                ", name='" + name + '\'' +
+                ", image='" + image + '\'' +
                 '}';
     }
 }
