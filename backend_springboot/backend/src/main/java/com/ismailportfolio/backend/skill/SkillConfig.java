@@ -10,7 +10,7 @@ import java.util.List;
 public class SkillConfig {
 
     @Bean
-    CommandLineRunner commandLineRunner(
+    CommandLineRunner skillCommandLineRunner(
             SkillRepository repository){
         return args -> {
             Skill figma = new Skill(
@@ -18,18 +18,18 @@ public class SkillConfig {
                     "#edf2f8",
                     "https://raw.githubusercontent.com/overgrownFudge/portfolio-project/main/frontend_react/src/assets/figma.png"
             );
-            Skill ReactJS = new Skill(
+            Skill reactJS = new Skill(
                     "ReactJS",
                     "#edf2f8",
                     "https://raw.githubusercontent.com/overgrownFudge/portfolio-project/main/frontend_react/src/assets/react.png"
             );
-            Skill JavaScript = new Skill(
+            Skill javaScript = new Skill(
                     "JavaScript",
                     "#edf2f8",
                     "https://raw.githubusercontent.com/overgrownFudge/portfolio-project/main/frontend_react/src/assets/javascript.png"
             );
             repository.saveAll(
-                    List.of(figma, ReactJS, JavaScript)
+                    List.of(figma, reactJS, javaScript)
             );
         };
     }
