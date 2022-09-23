@@ -14,19 +14,19 @@ public class ExperienceConfig {
             ExperienceRepository repository){
          return args -> {
              Experience twentyTwenty = new Experience(
-                    "2020",
+                    "2022",
                      new Job (
-                             "figma",
-                             "fa",
-                             "asdnasndasd"
+                             "Web Dev Internship",
+                             "Malik Law Offices",
+                             "Used HTML, CSS, JavaScript, Bootstrap, React to sustain various projects"
                      )
             );
             Experience twentyTwentyOne = new Experience(
-                    "2021",
+                    "2022",
                     new Job (
-                            "figma",
-                            "fa",
-                            "asdnasndasd"
+                            "Scanner Inspector",
+                            "Vote NYC",
+                            "Operating ballot scanning tools"
                     )
             );
 
