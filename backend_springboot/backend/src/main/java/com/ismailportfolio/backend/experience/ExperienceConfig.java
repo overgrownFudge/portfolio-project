@@ -1,5 +1,6 @@
 package com.ismailportfolio.backend.experience;
 
+import com.ismailportfolio.backend.skill.Skill;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +14,7 @@ public class ExperienceConfig {
     CommandLineRunner expCommandLineRunnerExp(
             ExperienceRepository repository){
          return args -> {
-             Experience twentyTwenty = new Experience(
+             Experience twentyTwentyTwo = new Experience(
                     "2022",
                      new Job (
                              "Web Dev Internship",
@@ -21,17 +22,24 @@ public class ExperienceConfig {
                              "Used HTML, CSS, JavaScript, Bootstrap, React to sustain various projects"
                      )
             );
-            Experience twentyTwentyOne = new Experience(
-                    "2022",
+             Experience twentyTwenty = new Experience(
+                     "2020",
+                     new Job (
+                             "Scanner Inspector",
+                             "Vote NYC",
+                             "Troubleshooting ballot scanning machines and software"
+                     )
+             );
+            Experience twentyEighteen = new Experience(
+                    "2018",
                     new Job (
-                            "Scanner Inspector",
-                            "Vote NYC",
-                            "Operating ballot scanning tools"
+                            "Play/Laser Tag Attendant",
+                            "Laser Bounce",
+                            "Operating/supervising arcade machines and providing instructions before laser tag play"
                     )
             );
-
-            repository.saveAll(
-                    List.of(twentyTwenty, twentyTwentyOne)
+             repository.saveAll(
+                    List.of(twentyTwentyTwo, twentyTwenty, twentyEighteen)
             );
         };
     }
