@@ -15,6 +15,7 @@ import python from '../assets/python.png';
 import react from '../assets/react.png';
 import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
+import springboot from '../assets/springboot.png'
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
 
@@ -74,5 +75,6 @@ export default {
   bolt,
   nb,
   skype,
+  springboot,
   spotify,
 };
