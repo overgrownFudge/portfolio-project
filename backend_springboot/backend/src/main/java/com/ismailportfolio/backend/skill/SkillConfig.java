@@ -13,10 +13,10 @@ public class SkillConfig {
     CommandLineRunner skillCommandLineRunner(
             SkillRepository repository){
         return args -> {
-            Skill figma = new Skill(
-                    "figma",
+            Skill springBoot = new Skill(
+                    "Spring Boot",
                     "#edf2f8",
-                    "https://raw.githubusercontent.com/overgrownFudge/portfolio-project/main/frontend_react/src/assets/figma.png"
+                    "https://github.com/overgrownFudge/portfolio-project/blob/main/frontend_react/src/assets/springboot.png"
             );
             Skill reactJS = new Skill(
                     "ReactJS",
@@ -29,7 +29,7 @@ public class SkillConfig {
                     "https://raw.githubusercontent.com/overgrownFudge/portfolio-project/main/frontend_react/src/assets/javascript.png"
             );
             repository.saveAll(
-                    List.of(figma, reactJS, javaScript)
+                    List.of(springBoot, reactJS, javaScript)
             );
         };
     }
