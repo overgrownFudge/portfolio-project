@@ -1,26 +1,31 @@
 export default [
     {
-        "year": "2020",
+        "year": "2022",
         "works": [
             {
-                "name": "figma",
-                "company": "Facebook",
-                "description": "Infinix Inbook X1 Ci3 10th 8GB..."
-            },
-            {
-                "name": "ReactJS",
-                "company": "Google",
-                "description": "Style and speed. Stand out on ..."
+                "name": "Software Engineering Internship",
+                "company": "Malik Law Offices",
+                "description": "Used HTML, CSS, JavaScript, Bootstrap, and ReactJS to sustain various projects"
             }
         ]
     },
     {
-        "year": "2021",
+        "year": "2020",
         "works": [
             {
-                "name": "JavaScript",
-                "company": "Microsoft",
-                "description": "Mega Discount, Impression of A..."
+                "name": "Scanner Inspector",
+                "company": "Vote NYC",
+                "description": "Troubleshooting ballot scanning machines and software"
+            }
+        ]
+    },
+    {
+        "year": "2018",
+        "works": [
+            {
+                "name": "Play/Laser Tag Attendant",
+                "company": "Laser Bounce",
+                "description": "Operating/supervising arcade machines and providing instructions before laser tag play"
             }
         ]
     }

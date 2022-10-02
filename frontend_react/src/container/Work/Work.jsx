@@ -3,13 +3,7 @@ import { AiFillEye, AiFillGithub } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 
 import { AppWrap, MotionWrap } from '../../wrapper'
-
-//VVVVVVVVthis is the dummy file VVVVVVVV
-import { work } from '../../constants'
-///\/\/\/\this is the dummy file /\/\/\/\
-
 import './Work.scss'
-
 
 
 function Work() {
@@ -19,11 +13,17 @@ function Work() {
   const [filterWork, setFilterWork] = useState([]);
 
   useEffect(() => {
-    
-      setWorks(work);
-      setFilterWork(work);
 
-  }, []);
+    const workUrl = "https://springboot-api-application.herokuapp.com/api/v1/work"
+
+    fetch(workUrl)
+    .then(res => res.json())
+    .then(data => {
+      setWorks(data)
+      setFilterWork(data)
+    })
+
+}, []);
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
@@ -33,9 +33,9 @@ function Work() {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
       if (item === 'All') {
-        setFilterWork(work);
+        setFilterWork(works);
       } else {
-        setFilterWork(work.filter((work) => work.tag.includes(item)));
+        setFilterWork(works.filter((work) => work.tag.includes(item)));
       }
     }, 400);
   };
@@ -46,7 +46,7 @@ function Work() {
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['All', 'JavaScript', 'React JS', 'UI/UX'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -85,7 +85,7 @@ function Work() {
                     <AiFillEye />
                   </motion.div>
                 </a>
-                <a href={work.project_link} target="_blank" rel="noreferrer">
+                <a href={work.github_link} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
@@ -103,7 +103,7 @@ function Work() {
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tag[0]}</p>
+                <p className="p-text">{work.tag}</p>
               </div>
             </div>
           </div>
