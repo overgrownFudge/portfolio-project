@@ -6,7 +6,6 @@ import { AppWrap, MotionWrap } from '../../wrapper'
 
 
 ////VVVVVVVVthese are dummy files VVVVVVVV
-import { skill } from '../../constants'
 import { workExperience } from '../../constants'
 ///\/\/\/\these are dummy files /\/\/\/\
 
@@ -19,9 +18,16 @@ function Skills() {
 
   useEffect(() => {
 
-    setExperiences(workExperience);
-    setSkills(skill);
+    // const expUrl = "https://springboot-api-application.herokuapp.com/api/v1/experience"
+    const skillUrl = "https://springboot-api-application.herokuapp.com/api/v1/skill"
+    // fetch(expUrl)
+    // .then(res => res.json())
+    // .then(data => setExperiences(workExperience))
+    setExperiences(workExperience)
 
+    fetch(skillUrl)
+      .then(res => res.json())
+      .then(data => setSkills(data))
   }, []);
 
   return (

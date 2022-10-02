@@ -3,13 +3,6 @@ import { motion } from 'framer-motion'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 
 import { AppWrap, MotionWrap } from '../../wrapper'
-
-
-////VVVVVVVVthese are dummy files VVVVVVVV
-import { testimonial } from '../../constants'
-import { brand } from '../../constants'
-///\/\/\/\these are dummy files /\/\/\/\
-
 import './Testimonial.scss'
 
 function Testimonial() {
@@ -22,9 +15,16 @@ function Testimonial() {
   };
 
   useEffect(() => {
+    const brandUrl = "https://springboot-api-application.herokuapp.com/api/v1/testimonial"
+    const testUrl = "https://springboot-api-application.herokuapp.com/api/v1/brand"
+    fetch(testUrl)
+    .then(res => res.json())
+    .then(data => setTestimonials(data))
 
-    setTestimonials(testimonial);
-    setBrands(brand);
+
+    fetch(brandUrl)
+    .then(res => res.json())
+    .then(data => setBrands(data))
 
   }, []);
 
