@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-project/static/css/main.6c966758.css",
-    "main.js": "/portfolio-project/static/js/main.de8da1af.js",
+    "main.js": "/portfolio-project/static/js/main.1f2b0f82.js",
     "static/media/mylogo.png": "/portfolio-project/static/media/mylogo.a638229d4362b16f56d3.png",
     "static/media/about05.png": "/portfolio-project/static/media/about05.8d81221780f4b03fecdc.png",
     "static/media/about04.png": "/portfolio-project/static/media/about04.fa7b3a72ed32b0e25bfb.png",
@@ -24,18 +24,19 @@
     "static/media/graphql.png": "/portfolio-project/static/media/graphql.0372057049181c5de51a.png",
     "static/media/amazon.png": "/portfolio-project/static/media/amazon.0a8be1f53138b5c52456.png",
     "static/media/mobile.png": "/portfolio-project/static/media/mobile.145d9ce0157a56f8fcd8.png",
+    "static/media/springboot.png": "/portfolio-project/static/media/springboot.3709dd027da3a9c00b2d.png",
     "static/media/email.png": "/portfolio-project/static/media/email.37b9e890eea501421fbf.png",
     "static/media/figma.png": "/portfolio-project/static/media/figma.152e55329b6f1915967e.png",
     "static/media/css.png": "/portfolio-project/static/media/css.5721a3928fe43de6baf8.png",
     "static/media/git.png": "/portfolio-project/static/media/git.a54d3fa44e02f2f61e69.png",
     "static/media/skype.png": "/portfolio-project/static/media/skype.c8d7ee175da5b4c8a8ab.png",
     "index.html": "/portfolio-project/index.html",
-    "static/media/circle.svg": "/portfolio-project/static/media/circle.134eeeb1e58895b892195fe8ed63bc9f.svg",
+    "static/media/circle.svg": "/portfolio-project/static/media/circle.ae5f84b3853b9e34aa83cf8dada715c5.svg",
     "main.6c966758.css.map": "/portfolio-project/static/css/main.6c966758.css.map",
-    "main.de8da1af.js.map": "/portfolio-project/static/js/main.de8da1af.js.map"
+    "main.1f2b0f82.js.map": "/portfolio-project/static/js/main.1f2b0f82.js.map"
   },
   "entrypoints": [
     "static/css/main.6c966758.css",
-    "static/js/main.de8da1af.js"
+    "static/js/main.1f2b0f82.js"
   ]
 }
