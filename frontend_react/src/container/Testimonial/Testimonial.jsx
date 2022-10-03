@@ -15,8 +15,8 @@ function Testimonial() {
   };
 
   useEffect(() => {
-    const brandUrl = "https://springboot-api-application.herokuapp.com/api/v1/testimonial"
-    const testUrl = "https://springboot-api-application.herokuapp.com/api/v1/brand"
+    const testUrl = "https://springboot-api-application.herokuapp.com/api/v1/testimonial"
+    const brandUrl = "https://springboot-api-application.herokuapp.com/api/v1/brand"
     fetch(testUrl)
     .then(res => res.json())
     .then(data => setTestimonials(data))
