@@ -14,7 +14,7 @@ function Work() {
 
   useEffect(() => {
 
-    const workUrl = "https://springboot-api-application.herokuapp.com/api/v1/work"
+    const workUrl = "https://portfolio-project-backend-production.up.railway.app/api/v1/work"
 
     fetch(workUrl)
     .then(res => res.json())
