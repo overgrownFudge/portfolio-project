@@ -18,8 +18,8 @@ function Skills() {
 
   useEffect(() => {
 
-    // const expUrl = "https://springboot-api-application.herokuapp.com/api/v1/experience"
-    const skillUrl = "https://springboot-api-application.herokuapp.com/api/v1/skill"
+    // const expUrl = "https://portfolio-project-backend-production.up.railway.app/api/v1/experience"
+    const skillUrl = "https://portfolio-project-backend-production.up.railway.app/api/v1/skill"
     // fetch(expUrl)
     // .then(res => res.json())
     // .then(data => setExperiences(workExperience))
