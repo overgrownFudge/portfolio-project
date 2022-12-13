@@ -8,9 +8,9 @@ import { AppWrap, MotionWrap } from '../../wrapper'
 function About(){
 
   const abouts = [
-    {title:'Web Dev', description: 'Frontend UI is my strong suit. I specialize in ReactJS with JavaScript, TypeScript, HTML, SCSS, and Bootstrap!',  imgUrl: images.about05},
-    {title:'Frontend', description: 'In Backend technologies, I am proficient in Java, Spring Boot, and NodeJS!', imgUrl: images.about02},
-    {title:'Backend', description: 'I am an awesome Backend Dev!', imgUrl: images.about03},
+    {title:'Web Dev', description: "I thrive on building quality systems that surpass end users' expectations!",  imgUrl: images.about05},
+    {title:'Frontend', description: 'Frontend UI is my strong suit. I specialize in ReactJS with JavaScript, TypeScript, HTML, SCSS, and Bootstrap!', imgUrl: images.about02},
+    {title:'Backend', description: 'In Backend technologies, I am proficient in Java, Spring Boot, and NodeJS!', imgUrl: images.about03},
   ]
 
   return (
